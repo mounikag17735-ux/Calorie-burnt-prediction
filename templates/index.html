@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calories Burnt Prediction</title>
+</head>
+<body>
+
+    <h1>Calories Burnt Prediction</h1>
+
+    <form action="/predict" method="POST">
+
+        <label>Gender (Male=0, Female=1)</label>
+        <input type="number" name="gender" required><br><br>
+
+        <label>Age</label>
+        <input type="number" name="age" required><br><br>
+
+        <label>Height</label>
+        <input type="number" step="any" name="height" required><br><br>
+
+        <label>Weight</label>
+        <input type="number" step="any" name="weight" required><br><br>
+
+        <label>Duration</label>
+        <input type="number" step="any" name="duration" required><br><br>
+
+        <label>Heart Rate</label>
+        <input type="number" step="any" name="heart_rate" required><br><br>
+
+        <label>Body Temperature</label>
+        <input type="number" step="any" name="body_temp" required><br><br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
