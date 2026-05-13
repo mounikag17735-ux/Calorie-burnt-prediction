@@ -1,0 +1,14 @@
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore CSV datasets
+*.csv
+
+# Ignore virtual environment
+venv/
+
+# Ignore system files
+.DS_Store
