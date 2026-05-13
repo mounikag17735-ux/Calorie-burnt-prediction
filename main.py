@@ -78,6 +78,6 @@ def predict():
     prediction =model.predict(features)
 
     return render_template('index.html',prediction_text=f'calories burned:{prediction[0]:.2f}')
-    
+        
 if __name__=="__main__":
     app.run(debug=True)
